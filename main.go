@@ -13,8 +13,8 @@ func main() {
 		})
 	})
 
-	err := router.Run(":9808")
-	if err != nil {
-		panic(fmt.Sprintf("Failed to start the web server - Error: %v", err))
+	error := router.Run(":9808")
+	if error != nil {
+		panic(fmt.Sprintf("Failed to start the web server - Error: %v", error))
 	}
 }
