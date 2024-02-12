@@ -15,11 +15,11 @@ func main() {
 			"message": "Hey Go URL Shortener !",
 		})
 	})
-	r.POST("/create-short-url", func(c *gin.Context) {
+	router.POST("/create-short-url", func(c *gin.Context) {
 		handler.CreateShortUrl(c)
 	})
 
-	r.GET("/:shortUrl", func(c *gin.Context) {
+	router.GET("/:shortUrl", func(c *gin.Context) {
 		handler.HandleShortUrlRedirect(c)
 	})
 

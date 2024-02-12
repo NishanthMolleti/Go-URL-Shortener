@@ -1,6 +1,6 @@
 module github.com/NishanthMolleti/go-url-shortner
 
-go 1.22.0
+go 1.22
 
 require github.com/go-redis/redis v6.15.9+incompatible
 
